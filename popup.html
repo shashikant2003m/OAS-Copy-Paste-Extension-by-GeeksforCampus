@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Navbar for Chrome Extension</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    
+        body {
+            height: 300px; 
+            width: 300px;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); 
+            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(90deg, #333, #555);
+        color: white;
+        padding: 15px 30px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        }
+    
+        .left-text {
+            font-weight: 700;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+        }
+    
+        .right-icons {
+            display: flex;
+            align-items: center;
+        }
+    
+        .right-icons > div {
+            margin-right: 15px;
+            transition: transform 0.3s, background-color 0.3s ease;
+        }
+    
+        .right-icons > div:hover {
+            transform: scale(1.15);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+        }
+    
+        .right-icons i {
+            font-size: 28px;
+            color: #ffffff; 
+            transition: color 0.3s, transform 0.3s;
+        }
+    
+        .right-icons i:hover {
+            color: #76D7C4; 
+            transform: rotate(15deg);
+        }
+    
+        .instructions {
+            margin-top: 10px;
+            text-align: justify;
+            font-size: 16px;
+            color: #ffffff;
+            padding: 12px;
+            background: rgba(46, 49, 49, 0.6); 
+            border-radius: 15px;
+            border: 2px solid #76D7C4;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.4s, transform 0.3s ease;
+        }
+    
+        .instructions:hover {
+            background-color: rgba(46, 49, 49, 0.9);
+            transform: translateY(-5px);
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-text">OAS LPU</div>
+        <div class="right-icons">
+            <div id="github"><i class="fab fa-github"></i></div>
+            <div id="tele"><i class="fab fa-telegram"></i></div>
+            <div id="youtube"><i class="fab fa-youtube"></i></div> 
+            <div id="insta"><i class="fab fa-instagram"></i></div>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <h3>To use this Chrome extension:</h3>
+        <ol>
+            <li>Install the extension by downloading it from GeeksforCampus.in</li>
+            <li>Install Always Active windows extension from chrome web store</li>
+            <li>Pin the Extension and Login with Oas LPU Open Test </li>
+            <li><b>Double click on the left question No. section,</b> it gets copied </li>
+            <li>If you put flag on any question they get not copy</li>
+            <li>Thanks, Love from <B>GeeksforCampus</B></li>
+        </ol>
+        <center><b>@Developed by Shashikant Sharma&nbsp; &nbsp; 11/9/24</b></center>
+        <br>
+    </div>
+
+    <script src="./popup.js"></script>
+</body>
+</html>
