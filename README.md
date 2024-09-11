@@ -1,4 +1,4 @@
-# OAS Copy Paste Extensionm by GeeksforCampus
+# OAS Copy Paste Extension by GeeksforCampus
 
 ## Overview
 
